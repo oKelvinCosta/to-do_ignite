@@ -52,7 +52,7 @@ export default function Todo() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header onSubmitTask={onSubmitTask} />
-      <main className="container--780 mb-8 flex-1 flex flex-col">
+      <main className="container--780 mb-8 flex-1 flex flex-col px-8">
         <div className="flex justify-between mb-4">
           <div className="flex gap-2 items-center">
             <p className="text-primary font-bold">Tarefas criadas </p>

@@ -18,25 +18,24 @@ export default function Header({ onSubmitTask }: HeaderProps) {
   }
 
   return (
-    <header className="relative h-[200px] mb-20 flex  item-center justify-center bg-gray-900">
+    <header className="relative h-[200px] mb-20 flex  item-center justify-center bg-gray-900 ">
       <div className="container--780 flex flex-col items-center justify-center">
         <img src={Logo} alt="To do logo" className="w-full max-w-[120px]" />
-
-        <div className="container--780 flex justify-center gap-2 absolute bottom-[-24px]">
-          <form onSubmit={handleSubmit} className="flex item-center gap-2 w-full">
-            <Input
-              placeholder="Add new task"
-              className="p-6 bg-gray-900 border border-secondary/50 focus:border-secondary focus-visible:border-secondary"
-              value={newTask}
-              onChange={(e) => setNewTask(e.target.value)}
-              required
-            />
-            <Button type="submit" className="h-full px-6">
-              Create
-              <CirclePlus className="size-4 ml-2" />
-            </Button>
-          </form>
-        </div>
+      </div>
+      <div className="container--780 flex justify-center gap-2 absolute bottom-[-24px] px-8">
+        <form onSubmit={handleSubmit} className="flex item-center gap-2 w-full">
+          <Input
+            placeholder="Criar tarefa"
+            className="p-6 bg-gray-900 border border-secondary/50 focus:border-secondary focus-visible:border-secondary"
+            value={newTask}
+            onChange={(e) => setNewTask(e.target.value)}
+            required
+          />
+          <Button type="submit" className="h-full px-6">
+            Criar
+            <CirclePlus className="size-4 ml-2" />
+          </Button>
+        </form>
       </div>
     </header>
   );

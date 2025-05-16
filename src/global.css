@@ -148,9 +148,9 @@
 
 /* Typography ---------------------------*/
 :root {
-  --title-font-family: "Outfit", "Roboto", "Helvetica Neue", sans-serif;
+  --title-font-family: "Inter", "Roboto", "Helvetica Neue", sans-serif;
   --title-font-weight: 600;
-  --text-font-family: "Outfit", "Roboto", "Helvetica Neue", sans-serif;
+  --text-font-family: "Inter", "Roboto", "Helvetica Neue", sans-serif;
 }
 
 /*
@@ -198,7 +198,7 @@ p {
   margin: 1.2rem auto;
   font-family: var(--text-font-family);
   line-height: 144% !important;
-  @apply text-lg;
+  @apply text-base;
 }
 /* text-base	font-size: 1rem; 16px */
 /* line-height: 1.5rem; 24px */

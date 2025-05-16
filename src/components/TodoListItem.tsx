@@ -14,7 +14,7 @@ export default function TodoListItem({ task, onUpdateTask, onDeleteTask }: TodoL
     <li className="flex items-start gap-2 bg-gray-900 px-6 rounded-lg border border-gray-600">
       <Checkbox
         id="terms1"
-        className={`rounded-full border-primary border-3 w-5 h-5 mt-[21px] mr-3 cursor-pointer data-[state=checked]:bg-secondary data-[state=checked]:border-secondary`}
+        className={`rounded-full border-primary border-2 w-5 h-5 mt-[21px] mr-3 cursor-pointer data-[state=checked]:bg-secondary data-[state=checked]:border-secondary`}
         onCheckedChange={() => {
           onUpdateTask(task.id, !task.isCompleted);
         }}
