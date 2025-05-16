@@ -1,13 +1,10 @@
 import { Checkbox } from "./ui/checkbox";
 import { Button } from "./ui/button";
 import { Trash2 } from "lucide-react";
+import type { Tasks } from "./Todo";
 
 interface TodoListItemProps {
-  task: {
-    id: number;
-    content: string;
-    isCompleted: boolean;
-  };
+  task: Tasks;
   onUpdateTask: (taskId: number, isCompleted: boolean) => void;
   onDeleteTask: (taskId: number) => void;
 }

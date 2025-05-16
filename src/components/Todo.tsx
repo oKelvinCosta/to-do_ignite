@@ -3,8 +3,14 @@ import { NotebookPen } from "lucide-react";
 import TodoList from "./TodoList";
 import { useState, useEffect } from "react";
 
+export interface Tasks {
+  id: number;
+  content: string;
+  isCompleted: boolean;
+}
+
 export default function Todo() {
-  const [tasks, setTasks] = useState([
+  const [tasks, setTasks] = useState<Tasks[]>([
     {
       id: 1,
       content:
@@ -67,7 +73,7 @@ export default function Todo() {
           <Void />
         )}
       </main>
-      
+
       <footer className="py-4">
         <div className="container--780">
           <p className="text-center font-bold !text-xs">
