@@ -44,7 +44,7 @@
 :root {
   --radius: 0.625rem;
   --background: oklch(0.28 0.03 257);
-  --foreground: oklch(0.97 0.00 265);
+  --foreground: oklch(0.97 0 265);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
@@ -114,8 +114,10 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground flex flex-col;
+    margin: 0;
   }
 }
 /* END TAILWIND AND SHADCN ---------------------------*/
